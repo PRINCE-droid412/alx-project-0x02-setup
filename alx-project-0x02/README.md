@@ -1,20 +1,3 @@
-# Next.js Project Setup and Basics
-
-Welcome to the **alx-project-0x02-setup** repository!
-
-This repository contains the foundational setup for a modern web application using **Next.js**, **TypeScript**, **Tailwind CSS**, and **ESLint**.
-
-## 🚀 Purpose
-
-The purpose of this repository is to demonstrate:
-- How to scaffold a Next.js project using the Pages Router.
-- How to configure TypeScript and Tailwind CSS from the start.
-- How to organize folders and reusable components.
-- The initial setup needed to build scalable and maintainable Next.js applications.
-
-It serves as a reference and starting point for future projects within the Airbnb clone project.
-
-
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
