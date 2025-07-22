@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Card from '../components/common/Card';
-import PostModal from '../components/common/PostModal';
-import Header from '../components/layout/Header';
-import { CardProps } from '../interfaces';
+import Card from '@/components/common/Card';
+import PostModal from '@/components/common/PostModal';
+import Header from '@/components/layout/Header';
+import { CardProps } from '@/interfaces';
 
 export default function HomePage() {
   const [posts, setPosts] = useState<CardProps[]>([
