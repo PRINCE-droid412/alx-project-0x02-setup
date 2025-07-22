@@ -4,7 +4,7 @@ import { WelcomeProps } from '../interfaces';
 
 const Home = () => {
   const props: WelcomeProps = {
-    message: 'Welcome to your Next.js project with TypeScript and Tailwind CSS!',
+    message: 'Welcome to my Next.js project with TypeScript & Tailwind CSS!, This is a simple page demonstrating the use of TypeScript interfaces and Tailwind',
   };
 
   return (

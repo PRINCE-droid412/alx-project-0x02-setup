@@ -37,7 +37,7 @@ export default function UsersPage() {
 }
 
 
-// ✅ Static generation at build time
+// Static generation at build time
 export async function getStaticProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users');
   const users = await res.json();
