@@ -30,7 +30,21 @@ export default function UsersPage() {
             />
           ))
         )}
+
       </div>
     </>
   );
+}
+
+
+// ✅ Static generation at build time
+export async function getStaticProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users = await res.json();
+
+  return {
+    props: {
+      users,
+    },
+  };
 }

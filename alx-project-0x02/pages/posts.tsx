@@ -23,7 +23,6 @@ export default function PostsPage() {
       });
   }, []);
 
-
   return (
     <>
       <Header />
@@ -44,4 +43,21 @@ export default function PostsPage() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10');
+  const data = await res.json();
+
+  const posts = data.map((post: any) => ({
+    userId: post.userId,
+    title: post.title,
+    content: post.body,
+  }));
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }
